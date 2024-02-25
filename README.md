@@ -2,7 +2,6 @@
 
 ---
 
-[![Scrutinizer Code Quality][code-quality-badge]][code-quality]
 [![License][license-badge]][license]
 [![Issues][issues-badge]][issues]
 [![GitHub last commit][last-commit-badge]]()
@@ -60,7 +59,7 @@ functionality. However, as of now, no such data retention occurs. Stay tuned for
 
 [license-badge]: https://img.shields.io/packagist/l/alexgoryushkin/RawData2Bot.svg
 
-[license]: https://github.com/alexgoryushkin/RawData2Bot/blob/master/LICENSE "License"
+[license]: https://github.com/alexgoryushkin/RawData2Bot/blob/master/LICENSE.txt "License"
 
 [issues-badge]: https://img.shields.io/github/issues-raw/alexgoryushkin/RawData2Bot.svg?maxAge=25000
 
