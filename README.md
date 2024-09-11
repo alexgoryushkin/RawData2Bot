@@ -58,7 +58,7 @@ functionality. However, as of now, no such data retention occurs. Stay tuned for
 
 [code-quality]: https://scrutinizer-ci.com/g/alexgoryushkin/RawData2Bot/?branch=master "Code quality on Scrutinizer"
 
-[license-badge]: https://img.shields.io/packagist/l/alexgoryushkin/RawData2Bot.svg
+[license-badge]: https://img.shields.io/badge/License-MIT-brightgreen.svg
 
 [license]: https://github.com/alexgoryushkin/RawData2Bot/blob/master/LICENSE.txt "License"
 
