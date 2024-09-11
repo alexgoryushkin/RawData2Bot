@@ -5,6 +5,7 @@ import logging
 import textwrap
 
 from aiogram import Bot, types, Dispatcher
+from aiogram.client.default import Default
 from aiogram.enums import ParseMode
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
@@ -25,12 +26,13 @@ dp = Dispatcher()
 @dp.message()
 async def default_message(message: types.Message):
     text = json.dumps(
-        message.model_dump(mode='json', exclude_none=True),
+        message.model_dump(mode='python', exclude_none=True),
         indent=4,
-        ensure_ascii=False
+        ensure_ascii=False,
+        default=lambda o: bot.default[o.name] if isinstance(o, Default) else str(o)
     )
     width_modifier = len(html.escape(text)) / len(text)
-    text_chunks = textwrap.wrap(text, width=4000 // width_modifier, replace_whitespace=False)
+    text_chunks = textwrap.wrap(text, width=int(4000 // width_modifier), replace_whitespace=False)
     for text in text_chunks:
         await bot.send_message(
             message.chat.id,
