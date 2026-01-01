@@ -1,2 +1,2 @@
-aiogram==3.13.0
-pydantic-settings==2.2.0
+aiogram==3.23.0
+pydantic-settings==2.12.0
